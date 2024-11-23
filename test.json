@@ -1,0 +1,618 @@
+[
+{
+"relevanceScore": 35,
+"keywords": [
+"xor",
+"and",
+"or",
+"shift",
+"bitmask",
+"toggle",
+"flip",
+"count set bits",
+"binary representation",
+"rightmost bit",
+"leftmost bit",
+"parity",
+"bitwise operations",
+"subset generation",
+"bit manipulation tricks",
+"check power of 2",
+"bitwise dp",
+"clear bit",
+"set bit",
+"toggle bit"
+],
+"questions": [
+{
+"title": "Single Number",
+"url": "https://leetcode.com/problems/single-number/"
+},
+{
+"title": "Single Number II",
+"url": "https://leetcode.com/problems/single-number-ii/"
+},
+{
+"title": "Missing Number",
+"url": "https://leetcode.com/problems/missing-number/"
+},
+{
+"title": "Sum of Two Integers",
+"url": "https://leetcode.com/problems/sum-of-two-integers/"
+},
+{
+"title": "Number of 1 Bits",
+"url": "https://leetcode.com/problems/number-of-1-bits/"
+}
+],
+"topic": "Bit Manipulation"
+},
+{
+"relevanceScore": 7,
+"keywords": [
+"bfs",
+"dfs",
+"nodes",
+"edges",
+"neighbors",
+"adjacency",
+"cycle",
+"shortest path",
+"dijkstra",
+"topological",
+"mst",
+"kruskal",
+"connected components",
+"bellman-ford",
+"undirected",
+"directed",
+"weighted",
+"unweighted",
+"graph traversal",
+"graph representation"
+],
+"questions": [
+{
+"title": "Graph Valid Tree",
+"url": "https://leetcode.com/problems/graph-valid-tree/"
+},
+{
+"title": "Number of Islands",
+"url": "https://leetcode.com/problems/number-of-islands/"
+},
+{
+"title": "Course Schedule",
+"url": "https://leetcode.com/problems/course-schedule/"
+},
+{
+"title": "Course Schedule II",
+"url": "https://leetcode.com/problems/course-schedule-ii/"
+},
+{
+"title": "Clone Graph",
+"url": "https://leetcode.com/problems/clone-graph/"
+}
+],
+"topic": "Graph"
+},
+{
+"relevanceScore": 5,
+"keywords": [
+"enqueue",
+"dequeue",
+"circular queue",
+"priority queue",
+"fifo",
+"sliding window",
+"max queue",
+"min queue",
+"double-ended queue",
+"deque",
+"task scheduling",
+"producer-consumer",
+"blocking queue",
+"thread-safe queue",
+"message queue",
+"queue depth",
+"capacity",
+"front",
+"rear",
+"queue operations",
+"poll",
+"offer",
+"dynamic resizing",
+"queue overflow",
+"queue underflow"
+],
+"questions": [
+{
+"title": "Implement Queue Using Stacks",
+"url": "https://leetcode.com/problems/implement-queue-using-stacks/"
+},
+{
+"title": "Design Circular Queue",
+"url": "https://leetcode.com/problems/design-circular-queue/"
+},
+{
+"title": "Perfect Squares",
+"url": "https://leetcode.com/problems/perfect-squares/"
+},
+{
+"title": "Sliding Window Maximum",
+"url": "https://leetcode.com/problems/sliding-window-maximum/"
+},
+{
+"title": "Time Needed to Inform All Employees",
+"url": "https://leetcode.com/problems/time-needed-to-inform-all-employees/"
+}
+],
+"topic": "Queue"
+},
+{
+"relevanceScore": 5,
+"keywords": [
+"bfs",
+"dfs",
+"binary",
+"root",
+"leaf",
+"inorder",
+"preorder",
+"postorder",
+"traversal",
+"balanced",
+"bst",
+"height",
+"depth",
+"path",
+"ancestor",
+"descendant",
+"mirror",
+"binary search",
+"kth smallest",
+"lca",
+"avl"
+],
+"questions": [
+{
+"title": "Binary Tree Inorder Traversal",
+"url": "https://leetcode.com/problems/binary-tree-inorder-traversal/"
+},
+{
+"title": "Maximum Depth of Binary Tree",
+"url": "https://leetcode.com/problems/maximum-depth-of-binary-tree/"
+},
+{
+"title": "Lowest Common Ancestor of a Binary Tree",
+"url": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/"
+},
+{
+"title": "Binary Tree Level Order Traversal",
+"url": "https://leetcode.com/problems/binary-tree-level-order-traversal/"
+},
+{
+"title": "Construct Binary Tree from Preorder and Inorder Traversal",
+"url": "https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/"
+}
+],
+"topic": "Tree"
+},
+{
+"relevanceScore": 2,
+"keywords": [
+"disjoint set",
+"connected components",
+"union",
+"find",
+"path compression",
+"union by rank",
+"cycle detection",
+"kruskal's algorithm",
+"mst",
+"connected",
+"groups",
+"friend circles",
+"union-find data structure",
+"quick union",
+"quick find",
+"network"
+],
+"questions": [
+{
+"title": "Number of Connected Components in an Undirected Graph",
+"url": "https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/"
+},
+{
+"title": "Friend Circles",
+"url": "https://leetcode.com/problems/friend-circles/"
+},
+{
+"title": "Redundant Connection",
+"url": "https://leetcode.com/problems/redundant-connection/"
+},
+{
+"title": "Graph Valid Tree",
+"url": "https://leetcode.com/problems/graph-valid-tree/"
+},
+{
+"title": "Smallest String With Swaps",
+"url": "https://leetcode.com/problems/smallest-string-with-swaps/"
+}
+],
+"topic": "Union-Find"
+},
+{
+"relevanceScore": 2,
+"keywords": [
+"directed acyclic graph",
+"dag",
+"linear ordering",
+"kahn's algorithm",
+"bfs",
+"dfs",
+"dependency graph",
+"precedence",
+"topological order",
+"graph cycle",
+"acyclic",
+"task scheduling",
+"project scheduling",
+"prerequisites"
+],
+"questions": [
+{
+"title": "Course Schedule",
+"url": "https://leetcode.com/problems/course-schedule/"
+},
+{
+"title": "Course Schedule II",
+"url": "https://leetcode.com/problems/course-schedule-ii/"
+},
+{
+"title": "Alien Dictionary",
+"url": "https://leetcode.com/problems/alien-dictionary/"
+},
+{
+"title": "Minimum Height Trees",
+"url": "https://leetcode.com/problems/minimum-height-trees/"
+},
+{
+"title": "Reconstruct Itinerary",
+"url": "https://leetcode.com/problems/reconstruct-itinerary/"
+}
+],
+"topic": "Topological Sort"
+},
+{
+"relevanceScore": 2,
+"keywords": [
+"prefix sum",
+"sliding window",
+"merge intervals",
+"subarray",
+"sort",
+"binary search",
+"two pointers",
+"rotate",
+"partition",
+"duplicate",
+"in-place",
+"maximum subarray",
+"matrix",
+"spiral",
+"row-wise",
+"column-wise",
+"merge sorted",
+"frequency",
+"3-sum",
+"4-sum",
+"kadane's algorithm",
+"monotonic"
+],
+"questions": [
+{
+"title": "Two Sum",
+"url": "https://leetcode.com/problems/two-sum/"
+},
+{
+"title": "Maximum Subarray",
+"url": "https://leetcode.com/problems/maximum-subarray/"
+},
+{
+"title": "Product of Array Except Self",
+"url": "https://leetcode.com/problems/product-of-array-except-self/"
+},
+{
+"title": "Find Minimum in Rotated Sorted Array",
+"url": "https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/"
+},
+{
+"title": "Search in Rotated Sorted Array",
+"url": "https://leetcode.com/problems/search-in-rotated-sorted-array/"
+}
+],
+"topic": "Array"
+},
+{
+"relevanceScore": 2,
+"keywords": [
+"singly",
+"doubly",
+"merge lists",
+"reverse list",
+"detect cycle",
+"intersection",
+"middle node",
+"delete node",
+"add node",
+"nth node",
+"head",
+"tail",
+"pointer",
+"swap nodes",
+"partition list",
+"rotate",
+"k-group reverse",
+"sorted list",
+"palindrome"
+],
+"questions": [
+{
+"title": "Reverse Linked List",
+"url": "https://leetcode.com/problems/reverse-linked-list/"
+},
+{
+"title": "Merge Two Sorted Lists",
+"url": "https://leetcode.com/problems/merge-two-sorted-lists/"
+},
+{
+"title": "Add Two Numbers",
+"url": "https://leetcode.com/problems/add-two-numbers/"
+},
+{
+"title": "Remove Nth Node From End of List",
+"url": "https://leetcode.com/problems/remove-nth-node-from-end-of-list/"
+},
+{
+"title": "Linked List Cycle",
+"url": "https://leetcode.com/problems/linked-list-cycle/"
+}
+],
+"topic": "Linked List"
+},
+{
+"relevanceScore": 1,
+"keywords": [
+"prefix tree",
+"insert",
+"search",
+"delete",
+"autocomplete",
+"word dictionary",
+"suffix trie",
+"longest prefix",
+"shortest unique prefix",
+"word break",
+"spell check",
+"string matching",
+"trie node",
+"trie traversal",
+"common prefix",
+"word search",
+"dictionary lookup"
+],
+"questions": [
+{
+"title": "Implement Trie (Prefix Tree)",
+"url": "https://leetcode.com/problems/implement-trie-prefix-tree/"
+},
+{
+"title": "Design Add and Search Words Data Structure",
+"url": "https://leetcode.com/problems/design-add-and-search-words-data-structure/"
+},
+{
+"title": "Word Search II",
+"url": "https://leetcode.com/problems/word-search-ii/"
+},
+{
+"title": "Replace Words",
+"url": "https://leetcode.com/problems/replace-words/"
+},
+{
+"title": "Concatenated Words",
+"url": "https://leetcode.com/problems/concatenated-words/"
+}
+],
+"topic": "Trie"
+},
+{
+"relevanceScore": 1,
+"keywords": [
+"dp",
+"memoization",
+"recursion",
+"subproblem",
+"state",
+"transition",
+"optimization",
+"overlapping subproblems",
+"knapsack",
+"subset sum",
+"palindrome partition",
+"edit distance",
+"longest subsequence",
+"maximum sum",
+"fibonacci",
+"grid traversal",
+"tabulation",
+"decision tree",
+"state diagram",
+"top-down",
+"bottom-up",
+"array dp"
+],
+"questions": [
+{
+"title": "Longest Increasing Subsequence",
+"url": "https://leetcode.com/problems/longest-increasing-subsequence/"
+},
+{
+"title": "Climbing Stairs",
+"url": "https://leetcode.com/problems/climbing-stairs/"
+},
+{
+"title": "House Robber",
+"url": "https://leetcode.com/problems/house-robber/"
+},
+{
+"title": "House Robber II",
+"url": "https://leetcode.com/problems/house-robber-ii/"
+},
+{
+"title": "Maximum Product Subarray",
+"url": "https://leetcode.com/problems/maximum-product-subarray/"
+}
+],
+"topic": "Dynamic Programming"
+},
+{
+"relevanceScore": 1,
+"keywords": [
+"nim game",
+"grundy number",
+"minimax",
+"optimal strategy",
+"backtracking",
+"dp games",
+"combinatorial games",
+"stones game",
+"zero-sum game",
+"turn-based",
+"game tree",
+"win condition",
+"strategy",
+"state space",
+"prisoner's dilemma"
+],
+"questions": [
+{
+"title": "Nim Game",
+"url": "https://leetcode.com/problems/nim-game/"
+},
+{
+"title": "Stone Game",
+"url": "https://leetcode.com/problems/stone-game/"
+},
+{
+"title": "Predict the Winner",
+"url": "https://leetcode.com/problems/predict-the-winner/"
+},
+{
+"title": "Stone Game II",
+"url": "https://leetcode.com/problems/stone-game-ii/"
+},
+{
+"title": "Stone Game VII",
+"url": "https://leetcode.com/problems/stone-game-vii/"
+}
+],
+"topic": "Game Theory"
+},
+{
+"relevanceScore": 1,
+"keywords": [
+"prime",
+"factorization",
+"gcd",
+"lcm",
+"modulo",
+"modular arithmetic",
+"divisors",
+"combinations",
+"permutations",
+"power",
+"logarithm",
+"factorial",
+"square root",
+"number theory",
+"sum of digits",
+"digit manipulation",
+"palindrome number",
+"fibonacci",
+"modular exponentiation"
+],
+"questions": [
+{
+"title": "Count Primes",
+"url": "https://leetcode.com/problems/count-primes/"
+},
+{
+"title": "Power of Three",
+"url": "https://leetcode.com/problems/power-of-three/"
+},
+{
+"title": "Fizz Buzz",
+"url": "https://leetcode.com/problems/fizz-buzz/"
+},
+{
+"title": "Happy Number",
+"url": "https://leetcode.com/problems/happy-number/"
+},
+{
+"title": "Integer to Roman",
+"url": "https://leetcode.com/problems/integer-to-roman/"
+}
+],
+"topic": "Math"
+},
+{
+"relevanceScore": 1,
+"keywords": [
+"substring",
+"anagram",
+"palindrome",
+"pattern",
+"concatenation",
+"trie",
+"manacher's",
+"suffix",
+"prefix",
+"lexicographical",
+"kmp",
+"z-algorithm",
+"aho-corasick",
+"reverse",
+"split",
+"compare",
+"remove duplicates",
+"character frequency",
+"reorder",
+"longest common prefix",
+"string matching",
+"replace"
+],
+"questions": [
+{
+"title": "Longest Palindromic Substring",
+"url": "https://leetcode.com/problems/longest-palindromic-substring/"
+},
+{
+"title": "Valid Anagram",
+"url": "https://leetcode.com/problems/valid-anagram/"
+},
+{
+"title": "Group Anagrams",
+"url": "https://leetcode.com/problems/group-anagrams/"
+},
+{
+"title": "Longest Substring Without Repeating Characters",
+"url": "https://leetcode.com/problems/longest-substring-without-repeating-characters/"
+},
+{
+"title": "Minimum Window Substring",
+"url": "https://leetcode.com/problems/minimum-window-substring/"
+}
+],
+"topic": "String"
+}
+]

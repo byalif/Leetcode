@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeetCode Topic Explorer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+     header {
+  background: linear-gradient(to bottom, #4f6694, rgb(85, 94, 143)); /* Subtle matte purple to lighter purple */
+  padding: 20px;
+  border-bottom: 2px solid #e0e0e0;
+  text-align: center;
+  color: #fff;
+  font-family: 'Roboto', sans-serif; /* Professional font for better readability */
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin: 10px 0;
+  color: #f8f9fa; /* Softer white for text */
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for professional look */
+}
+
+header p {
+  font-size: 1.1rem;
+  color: #eaeaea; /* Softer grayish-white for body text */
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+header p:last-child {
+  font-style: italic; /* Differentiate the explanation of relevance scores */
+}
+
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .topic-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .topic-card {
+    background: linear-gradient(to bottom, #4f6694, rgb(85, 94, 143)); /* Subtle matte purple to lighter purple */
+            color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            flex: 1 1 calc(33% - 20px);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .topic-card h2 {
+            margin: 0;
+        }
+
+        .topic-card ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        .topic-card ul li a {
+            color: #ffcc00;
+            text-decoration: none;
+            font-size: 0.9em;
+        }
+
+        .topic-card ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .keywords {
+            font-size: 0.85em;
+            color: #f4f4f9;
+            margin-top: 10px;
+        }
+
+        nav {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #6200ea;
+            background: #f4f4f9;
+            padding: 8px 15px;
+            border-radius: 5px;
+            margin: 5px;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            background: #e0e0e0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+           background: linear-gradient(to bottom, #4f6694, rgb(85, 94, 143)); /* Subtle matte purple to lighter purple */
+            color: #fff;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+<header>
+    <h1>LeetGuide: Curated LeetCode Questions by Topic</h1>
+    <p>
+        Welcome to LeetGuide! Every day, we scrape top topics and questions from Reddit and LeetCode's most popular
+        categories.
+        Using advanced aggregation techniques, we analyze the most discussed keywords and present the best LeetCode
+        questions
+        to help you practice efficiently and boost your problem-solving skills.
+    </p>
+    <p>
+        Topics are sorted by relevance scores, calculated based on their popularity and frequency of discussion,
+        to ensure you're tackling the most impactful problems.
+    </p>
+</header>
+
+
+    <div class="container">
+        <nav id="topic-nav">
+            <!-- Navigation links will be dynamically added here -->
+        </nav>
+
+        <section class="topic-list" id="topics">
+            <!-- Topics will be dynamically added here -->
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 LeetCode Topic Explorer. Happy Coding!</p>
+    </footer>
+
+    <script>
+
+    
+
+        const navContainer = document.getElementById('topic-nav');
+        const topicsContainer = document.getElementById('topics');
+
+        // Sort topics by relevanceScore
+           fetch(`${yourapi})
+                .then(response => response.json())
+                .then(data => {
+                    // Sort topics by relevanceScore
+                    const sortedData = data.sort((a, b) => b.relevanceScore - a.relevanceScore);
+
+                    // Populate navigation links and topic cards
+                    sortedData.forEach((item, index) => {
+                        // Navigation link
+                        const navLink = document.createElement('a');
+                        navLink.href = `#topic-${index}`;
+                        navLink.textContent = item.topic;
+                        navContainer.appendChild(navLink);
+
+                        // Topic card
+                        const topicCard = document.createElement('div');
+                        topicCard.classList.add('topic-card');
+                        topicCard.id = `topic-${index}`;
+
+                        const topicHeader = document.createElement('h2');
+                        topicHeader.textContent = `${item.topic} (${item.relevanceScore})`;
+                        topicCard.appendChild(topicHeader);
+
+                        const questionList = document.createElement('ul');
+                        item.questions.forEach(question => {
+                            const questionItem = document.createElement('li');
+                            const questionLink = document.createElement('a');
+                            questionLink.href = question.url;
+                            questionLink.textContent = question.title;
+                            questionLink.target = "_blank";
+                            questionItem.appendChild(questionLink);
+                            questionList.appendChild(questionItem);
+                        });
+                        topicCard.appendChild(questionList);
+
+                        const keywords = document.createElement('p');
+                        keywords.classList.add('keywords');
+                        keywords.textContent = `Keywords: ${item.keywords.join(', ')}`;
+                        topicCard.appendChild(keywords);
+
+                        topicsContainer.appendChild(topicCard);
+                    });
+                })
+                .catch(error => {
+                    console.error('Error fetching data:', error);
+                });
+    </script>
+</body>
+
+</html>
